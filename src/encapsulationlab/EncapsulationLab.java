@@ -28,12 +28,9 @@ public class EncapsulationLab {
         
         employee.createEmployee("Peter", "Piper", "333-1234");
         
-        employee.meetWithHrForBenefitAndSalryInfo();
-        employee.meetDepartmentStaff();
-        employee.reviewDeptPolicies();
-        employee.moveIntoCubicle("1234");
+        employee.doOrientation("1234");
 
-        System.out.println("The employee's status is: " + employee.getStatus());
+       
     }
     
 }
