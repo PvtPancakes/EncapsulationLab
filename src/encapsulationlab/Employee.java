@@ -28,16 +28,19 @@ public class Employee {
 
     }
     
-    public Employee(String firstName, String lastName, String ssn){
+    public Employee(String firstName, String lastName, String ssn, Date birthDate){
         this.firstName = firstName;
         this.lastName = lastName;
         this.ssn = ssn;
+        this.birthDate = birthDate;
     }
     
-    public void createEmployee(String firstName, String lastName, String ssn){
+    public void createEmployee(String firstName, String lastName, String ssn, int birthYear,
+            int birthMonth, int birthDay){
         setFirstName(firstName);
         setLastName(lastName);
         setSsn(ssn);
+        setBirthDate(birthYear, birthMonth, birthDay);
     }
     
     public String getFirstName() {
@@ -74,6 +77,15 @@ public class Employee {
             System.exit(0);
         }
         this.ssn = ssn;
+    }
+    
+    private void setBirthDate(int birthYear, int birthMonth, int birthDay){
+        Date birthDate = new Date(birthYear, birthMonth, birthDay);
+        this.birthDate = birthDate;
+    }
+    
+    public String getCubeId(){
+        return cubeId;
     }
         
     public void doOrientation(String cubeId){

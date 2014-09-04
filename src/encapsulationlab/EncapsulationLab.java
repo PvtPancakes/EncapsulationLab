@@ -6,6 +6,8 @@
 
 package encapsulationlab;
 
+import java.util.Date;
+
 /**
  *
  * @author eennis
@@ -26,7 +28,7 @@ public class EncapsulationLab {
         
         Employee employee = new Employee();
         
-        employee.createEmployee("Peter", "Piper", "333-1234");
+        employee.createEmployee("Peter", "Piper", "333-1234", 1994, 11, 7);
         
         employee.doOrientation("1234");
 
